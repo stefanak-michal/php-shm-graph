@@ -1,0 +1,45 @@
+{
+    "name": "stefanak-michal/php-shm-graph",
+    "description": "",
+    "keywords": [],
+    "homepage": "https://github.com/stefanak-michal/php-shm-graph",
+    "type": "library",
+    "readme": "README.md",
+    "minimum-stability": "stable",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Michal Štefaňák",
+            "role": "Developer",
+            "email": "stefanak.michal@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/stefanak-michal/php-shm-graph/issues",
+        "source": "https://github.com/stefanak-michal/php-shm-graph",
+		"docs": "https://github.com/stefanak-michal/php-shm-graph/blob/main/README.md"
+    },
+    "funding": [
+        {
+            "type": "ko-fi",
+            "url": "https://ko-fi.com/michalstefanak"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "StefanakMichal\\PhpShmGraph\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "StefanakMichal\\PhpShmGraph\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "ext-shmop": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^13.1"
+    }
+}
