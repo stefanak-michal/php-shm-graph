@@ -1,7 +1,7 @@
 {
     "name": "stefanak-michal/php-shm-graph",
-    "description": "",
-    "keywords": [],
+    "description": "A graph database engine for PHP in shared memory",
+    "keywords": ["graph database", "shared memory", "PHP"],
     "homepage": "https://github.com/stefanak-michal/php-shm-graph",
     "type": "library",
     "readme": "README.md",
