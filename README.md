@@ -2,6 +2,12 @@
 
 A graph database engine for PHP backed by System V shared memory (`shmop`/`sysvshm` extension). Built as an experimental project to explore AI-augmented coding workflows — the graph structure, storage layer, and test suite were developed with AI assistance as a vehicle for testing how well AI tools handle low-level PHP extension usage.
 
+## Warnings
+
+> **Not production-ready.** This project is experimental and has not been tested or hardened for production use. Do not rely on it for critical or production workloads.
+
+> **Performance degrades exponentially at scale.** Handling ~10,000 elements is fine (sub-second). However, performance worsens exponentially with every additional 10,000 elements — at 100,000 elements operations can take close to 10 minutes. This makes the library unsuitable for large graphs.
+
 ## What it does
 
 Stores a labeled property graph (nodes and edges with arbitrary properties) entirely in shared memory segments, with a semaphore-based locking mechanism for concurrent access. No files, no database server.
